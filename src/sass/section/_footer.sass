@@ -1,0 +1,76 @@
+.footer
+    padding: 128px 0 82px 0
+    background-color: $bc-footer
+    &-top
+        display: flex
+        margin-bottom: 3px
+        &-logo
+            margin-right: 52px
+            &__image
+                display: block
+                max-width: 90px
+                margin-bottom: 28px
+            &__text
+                max-width: 240px
+                margin-bottom: 32px
+                font-size: 15px
+                line-height: 28px
+                color: $color-desc
+            &__social
+                display: flex
+                align-items: center
+                list-style: none
+                &-item:not(:last-child)
+                    margin-right: 22px
+                &-item
+                    &__link
+                        &-img
+                            display: block
+                            +hover
+                                transition: transform 0.1s linear
+                                transform: scale(1.1)
+    &-list
+        width: 160px
+        margin-right: 34px
+        margin-bottom: 96px
+        &-wrapper
+            
+        &__title
+            margin-bottom: 31px
+            font-weight: bold
+            font-size: 18px
+            line-height: 25px
+            color: $color-desc
+            &--visible
+                    display: none
+        &__category
+            list-style: none
+            &-item:not(:last-child)
+                margin-bottom: 24px
+            &-link
+                text-decoration: none
+                font-size: 16px
+                line-height: 22px
+                color: #959EAD
+                +hover
+                    color: #ffffff
+                &--visible
+                    display: none
+    &-bottom
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__logo
+            margin-bottom: 24px
+            max-width: 56px
+            padding: 16px 16px 12px 16px
+            border-radius: 50%
+            background-color: #1576D8
+        &__text
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+            text-align: center
+            color: $color-desc
+
+                
