@@ -1,0 +1,29 @@
+.projects
+    padding: 40px 0 80px 0
+    &__card
+        background: black
+        margin: 20px 20px 0 0
+        &-wrapper
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-grow: 0
+            flex-wrap: wrap
+            margin-top: 40px
+    &__card:nth-child(-n+2)
+        margin-top: 0
+    &__card:nth-child(2n)
+        margin-right: 0
+    &__btn
+        +btn
+        margin-top: 40px
+        padding: 18px 40px
+        width: 215px
+        height: 56px
+        display: flex
+        align-items: center
+        background-color: #ffffff
+        color: #333333
+        text-transform: none 
+        border: 3px solid #333333
+        

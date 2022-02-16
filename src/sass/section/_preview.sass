@@ -1,0 +1,42 @@
+.preview
+    padding: 0 0 80px 0
+    background: $main-bacground-color
+    &-banner
+        position: relative
+        width: 100%
+        height: 73vh
+        margin: 0
+        padding: 0
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: center
+        &__video
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &__title
+            position: absolute
+            width: 100%
+            height: 100%
+            background: #d6d6d6
+            font-style: normal
+            font-weight: 800
+            font-size: 374px
+            line-height: 38vh
+            text-align: center
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+            text-transform: uppercase
+            mix-blend-mode: screen
+    &-descr
+        &__text
+            margin-top: 15px
+            width: 363px
+            font-weight: normal
+            font-size: 24px
+            line-height: 29px
+            text-align: center
+            color: #1D1D1F
+        &__button
+            margin-top: 52px
+            +btn
