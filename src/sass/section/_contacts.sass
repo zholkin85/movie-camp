@@ -1,8 +1,45 @@
 .contacts
     padding: 40px 0 80px 0
     background: $main-bacground-color
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(2 , 1fr)
     &__title
         font-weight: bold
         font-size: 48px
         line-height: 57px
         color: $main-text-color
+    &__form
+        grid-column: 3
+        &-submit
+            display: block
+            +btn
+    &__social
+        grid-column: 1
+        &-title
+            font-weight: 600
+            font-size: 16px
+            line-height: 19px
+            color: $form-text-color
+        &-list
+            display: flex
+            list-style-type: none
+        &-item
+            margin: 0
+        &-link
+            display: flex
+            flex-direction: column
+            text-decoration: none
+        &-img
+            padding: 20px
+            width: 87px
+            height: 87px
+            background: #D6D6D6
+            border-radius: 50%
+            object-fit: scale-down
+        &-name
+            font-weight: 600
+            font-size: 16px
+            line-height: 19px
+            color: #565E66
