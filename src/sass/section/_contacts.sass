@@ -13,6 +13,7 @@
     &__form
         grid-column: 3
         grid-row: 1/3
+        padding: 0 95px 0 95px
         &-title
             margin-bottom: 52px
             font-weight: 600
@@ -39,7 +40,6 @@
             background-size: 24px 24px
         &-checkbox
             &>input
-                margin-top: 30px
                 -moz-appearance: none
                 -webkit-appearance: none
                 appearance: none
@@ -47,6 +47,7 @@
                 display: inline-flex
                 align-items: center
                 user-select: none
+                margin-top: 30px
             //создание в label псевдоэлемента before со следующими стилями
             &>span::before
                 content: ''
@@ -100,12 +101,17 @@
         &-list
             display: flex
             list-style-type: none
+            margin-top: 14px
         &-item
             margin: 0
+            &:not(:last-child)
+                margin-right: 20px
         &-link
             display: flex
             flex-direction: column
             text-decoration: none
+            
+            
         &-img
             padding: 20px
             width: 87px
@@ -114,6 +120,7 @@
             border-radius: 50%
             object-fit: scale-down
         &-name
+            margin-top: 6px
             font-weight: 600
             font-size: 16px
             line-height: 19px

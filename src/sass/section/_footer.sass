@@ -1,76 +1,62 @@
 .footer
-    padding: 128px 0 82px 0
-    background-color: $bc-footer
-    &-top
+    background-color: #737373
+    &-wrap
+        padding: 13px 0
         display: flex
-        margin-bottom: 3px
-        &-logo
-            margin-right: 52px
-            &__image
-                display: block
-                max-width: 90px
-                margin-bottom: 28px
-            &__text
-                max-width: 240px
-                margin-bottom: 32px
-                font-size: 15px
-                line-height: 28px
-                color: $color-desc
-            &__social
-                display: flex
-                align-items: center
-                list-style: none
-                &-item:not(:last-child)
-                    margin-right: 22px
-                &-item
-                    &__link
-                        &-img
-                            display: block
-                            +hover
-                                transition: transform 0.1s linear
-                                transform: scale(1.1)
-    &-list
-        width: 160px
-        margin-right: 34px
-        margin-bottom: 96px
-        &-wrapper
-            
-        &__title
-            margin-bottom: 31px
-            font-weight: bold
-            font-size: 18px
-            line-height: 25px
-            color: $color-desc
-            &--visible
-                    display: none
-        &__category
-            list-style: none
+        align-items: center
+        justify-content: space-between
+    &__logo
+        margin: 0
+        margin-top: 13px
+        margin-right: 80px
+        text-transform: uppercase
+        text-align: center
+        font-weight: bold
+        font-size: 32px
+        line-height: 72.34%
+        color: #F2F2F2
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25)
+    &__menu
+        margin: 0
+        display: flex
+        list-style-type: none
+        &-item:not(:last-child)
+            margin-right: 53px
+        &-link
+            text-decoration: none
+            font-weight: 500
+            font-size: 16px
+            color: #F2F2F2
+    &__btn
+        margin: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 22px 37px
+        width: 220px
+        height: 64px
+        background: #FFFF78
+        border-radius: 100px
+        cursor: pointer
+        font-weight: 600
+        font-size: 16px
+        line-height: 19px
+        color: #333333
+    &-border
+        border: 2px solid rgba(214, 214, 214, 0.3)
+    .subfooter
+        padding: 29px 0
+        display: flex
+        justify-content: center
+        &__menu
+            list-style-type: none
+            display: flex
             &-item:not(:last-child)
-                margin-bottom: 24px
+                margin-right: 50px
             &-link
                 text-decoration: none
-                font-size: 16px
-                line-height: 22px
-                color: #959EAD
-                +hover
-                    color: #ffffff
-                &--visible
-                    display: none
-    &-bottom
-        display: flex
-        flex-direction: column
-        align-items: center
-        &__logo
-            margin-bottom: 24px
-            max-width: 56px
-            padding: 16px 16px 12px 16px
-            border-radius: 50%
-            background-color: #1576D8
-        &__text
-            font-weight: 600
-            font-size: 16px
-            line-height: 22px
-            text-align: center
-            color: $color-desc
-
-                
+                font-weight: 500
+                font-size: 12px
+                color: #333333
+        
+    
